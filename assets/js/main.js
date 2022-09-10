@@ -19,12 +19,9 @@ const swiper = new Swiper('#brands .swiper', {
 
 const swiper2 = new Swiper('#feed .swiper', {
   
-  // Navigation arrows
- navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
+
+  loop:true,
   
   autoplay: {
     delay: 2000,
@@ -42,7 +39,21 @@ const swiper2 = new Swiper('#feed .swiper', {
     }
   },
   
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  
 });
+
+const swipercont = new Swiper('#swipercon .swiper', {
+ 
+
+  
+
+});
+
 
 /*
   Main Content

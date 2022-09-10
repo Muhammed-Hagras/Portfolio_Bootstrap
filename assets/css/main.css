@@ -570,3 +570,77 @@ Blog Details
   display: block;
   
 }
+
+
+
+
+
+
+
+/*----------------------------swiper--------------------------------*/
+
+
+
+
+.swiper-pagination {
+  position: relative;
+  top: 25px;
+  left: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.up {
+  position: relative;
+  right: 50px;
+  top: 13px;
+}
+.down {
+  position: relative;
+  right: -100px;
+  top: -55px;
+}
+
+.swiper-button-next {
+  background-color: white;
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+  color: black;
+}
+
+.swiper-button-prev {
+  position: relative;
+  right: 50px;
+  background-color: white;
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+  color: black;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #8490ff;
+  color: white;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+}
+
+@media (min-width: 1200px) {
+  .swiper-pagination {
+    position: relative;
+    top: -200px;
+    left: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .up {
+    position: relative;
+    right: 0;
+    top: -100px;
+  }
+  .down {
+    position: relative;
+  }
+}
