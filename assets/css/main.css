@@ -62,6 +62,16 @@ button {
   transition: background 150ms, color 300ms;
 }
 
+.transition-all {
+  transition: all 500ms;
+}
+
+.hide {
+  width: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
 /*
   Components Styles
  */

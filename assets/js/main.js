@@ -51,47 +51,14 @@ const swiper2 = new Swiper('#feed .swiper', {
 /*
   Home Page
  */
-
-
-  /*
-  Google Maps 
-  */
-
-
-
-  function getlocation(){ 
-    if(navigator.geolocation){ 
-        navigator.geolocation.getCurrentPosition(showPos); 
-    }
-    else{
-        alert("Sorry! your Browser does not support Geolocation API")
-    }
-}
-
-  function showPos(position){ 
-    latt = position.coords.latitude; 
-    long = position.coords.longitude; 
-    var lattlong = new google.maps.LatLng(latt, long); 
-    var myOptions = { 
-        center: lattlong, 
-        zoom: 15, 
-        mapTypeControl: true, 
-        navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL} 
-    } 
-    var maps = new google.maps.Map(document.getElementById("map"), myOptions); 
-    var markers = 
-    new google.maps.Marker({position:lattlong, map:maps, title:"You are here!"}); 
-} 
-
-getlocation();
-
-
 /*
   Out Latest Projects
  */
 
   const projectsFiltersBtns = document.querySelectorAll("#latest-projects [data-filter]");
   const projects = document.querySelectorAll("#latest-projects [data-cat]");
+
+  console.log(projects)
   
   function projectFilterClickHandler(e) {
     const clickedBtn = e.target;
@@ -116,3 +83,5 @@ getlocation();
     projectFilterBtn.addEventListener('click', projectFilterClickHandler);
   })
   
+  
+
