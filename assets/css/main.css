@@ -586,7 +586,7 @@ Blog Details
   position: relative;
   top: 25px;
   left: 45%;
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -630,8 +630,8 @@ Blog Details
   .swiper-pagination {
     position: relative;
     top: -200px;
-    left: 1500px;
-    width: 100%;
+    left: 93%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
   }
